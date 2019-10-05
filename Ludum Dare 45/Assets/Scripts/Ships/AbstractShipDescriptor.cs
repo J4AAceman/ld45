@@ -47,4 +47,5 @@ public abstract class AbstractShipDescriptor : MonoBehaviour
     {
         CurrentHealth = MaxHealth;
     }
+
 }

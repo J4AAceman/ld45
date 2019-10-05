@@ -12,4 +12,10 @@ public class EnemyAISimple : AbstractEnemyBehavior
         GetComponent<AbstractShipDescriptor>().VelocityVector = StartingVelocity;
     }
 
+    public override void DrawGizmos(Vector3 position)
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawSphere(position, 0.5f);
+        Gizmos.DrawRay(position, new Vector3(StartingVelocity.x, StartingVelocity.y, 0) * GetComponent<AbstractShipDescriptor>().MaxShipSpeed);
+    }
 }

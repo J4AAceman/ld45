@@ -14,4 +14,10 @@ public abstract class AbstractEnemyBehavior : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public virtual void DrawGizmos(Vector3 position)
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(position, 0.125f);
+    }
 }

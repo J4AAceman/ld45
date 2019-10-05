@@ -51,8 +51,8 @@ public class PlayerController : MonoBehaviour
 
         if (stealShip && currentHackCooldown <= 0)
         {
+            // Try to steal enemy ship
             currentHackCooldown = MaxHackCooldown;
-            // TODO: try to steal enemy ship
 
             // Raycast forward, hitting closest of either an enemy ship, or the level collider
             RaycastHit2D ray = Physics2D.Raycast(playerShip.transform.position, Vector2.up, 20, LayerMask.GetMask("LevelBoundary", "Enemies"));
