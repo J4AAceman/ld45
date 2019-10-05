@@ -9,7 +9,7 @@ public class PlayerCannon : AbstractWeapon
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -17,7 +17,7 @@ public class PlayerCannon : AbstractWeapon
     {
 
     }
-    
+
     protected override void Fire()
     {
         var bullet = Instantiate(Bullet, this.transform.position, this.transform.rotation);

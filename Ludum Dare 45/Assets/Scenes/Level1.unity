@@ -283,7 +283,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -59922463
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2574,6 +2574,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6610349487454268968, guid: 018498ad7ef43ca48bda36b13a7119e0,
+        type: 3}
+      propertyPath: ShipWeaponList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6610349487454268968, guid: 018498ad7ef43ca48bda36b13a7119e0,
         type: 3}
       propertyPath: ShipWeaponList.Array.data[0]

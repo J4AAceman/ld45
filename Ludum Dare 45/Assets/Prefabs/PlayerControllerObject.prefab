@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70c158a7f45fb14dae6feacf8f7dd7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxPlayerSpeed: 12
   playerShip: {fileID: 0}
+  HackFX: {fileID: 355633055957319793, guid: d5feaf6fc4549fb4aa5ec0d06bc35d7f, type: 3}
+  MaxHackCooldown: 5

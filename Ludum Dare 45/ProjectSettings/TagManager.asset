@@ -41,6 +41,9 @@ TagManager:
   - name: Terrain
     uniqueID: 4235044833
     locked: 0
+  - name: HackFX
+    uniqueID: 825200229
+    locked: 0
   - name: EnemyShips
     uniqueID: 3036805567
     locked: 0

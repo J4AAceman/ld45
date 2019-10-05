@@ -105,8 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxShipSpeed: 12
-  ShipWeaponList:
-  - {fileID: 0}
+  ShipWeaponList: []
   MaxHealth: 100
   CurrentHealth: 0
 --- !u!1 &8489844513605784882
