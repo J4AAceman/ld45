@@ -13,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PlayerBullets
+  - Enemies
+  - EnemyBullets
+  - LevelBoundary
   - 
   - 
   - 
@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Terrain
+    uniqueID: 4235044833
+    locked: 0
+  - name: EnemyShips
+    uniqueID: 3036805567
+    locked: 0
+  - name: Player
+    uniqueID: 1211659221
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
