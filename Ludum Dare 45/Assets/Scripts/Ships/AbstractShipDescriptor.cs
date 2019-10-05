@@ -43,7 +43,7 @@ public abstract class AbstractShipDescriptor : MonoBehaviour
         }
     }
 
-    private void InitializeShipStats()
+    public void InitializeShipStats()
     {
         CurrentHealth = MaxHealth;
     }

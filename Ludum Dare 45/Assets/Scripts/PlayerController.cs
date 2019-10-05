@@ -62,8 +62,7 @@ public class PlayerController : MonoBehaviour
                 AbstractShipDescriptor newShip = otherObject.GetComponent<AbstractShipDescriptor>();
                 if (newShip)
                 {
-                    // TODO: steal ship
-                    Debug.Log("Ship hit");
+                    // Steal ship
 
                     // Delete enemy behavior, but NOT THE OBJECT
                     Destroy(otherObject.GetComponent<AbstractEnemyBehavior>());
@@ -71,6 +70,12 @@ public class PlayerController : MonoBehaviour
                     // Safe swap of "playerShip". Possibly not necessary, but just in case
                     var oldPlayerShip = playerShip;
                     playerShip = newShip;
+
+                    // Switch layer of new ship
+                    playerShip.gameObject.layer = LayerMask.NameToLayer("Player");
+
+                    // Reset health of new ship
+                    playerShip.InitializeShipStats(); 
 
                     // Now destroy the old ship
                     // TODO: make destruction animation for all ships

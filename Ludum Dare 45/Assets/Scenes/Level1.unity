@@ -2427,6 +2427,11 @@ PrefabInstance:
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 1358699159}
+    - target: {fileID: 4814547621861087004, guid: d2acfe8d56aa7854589546f1aab07551,
+        type: 3}
+      propertyPath: MaxHackCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2acfe8d56aa7854589546f1aab07551, type: 3}
 --- !u!1001 &5665441160282540575
@@ -2513,17 +2518,17 @@ PrefabInstance:
     - target: {fileID: 6312397767370452294, guid: 9479759dd83a6984586c22db58bd96ec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1739444
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6312397767370452294, guid: 9479759dd83a6984586c22db58bd96ec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2767622
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6312397767370452294, guid: 9479759dd83a6984586c22db58bd96ec,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.847656
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6312397767370452294, guid: 9479759dd83a6984586c22db58bd96ec,
         type: 3}
@@ -2670,16 +2675,6 @@ PrefabInstance:
     - target: {fileID: 8489844513522788717, guid: 018498ad7ef43ca48bda36b13a7119e0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8489844513605784893, guid: 018498ad7ef43ca48bda36b13a7119e0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8489844513605784893, guid: 018498ad7ef43ca48bda36b13a7119e0,
-        type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
