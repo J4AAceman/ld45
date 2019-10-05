@@ -6,6 +6,7 @@ public abstract class AbstractPlayerBullet : MonoBehaviour
 {
     protected const float BulletLifetime = 2.0f;
     protected Vector2 StartingVelocity = Vector2.up * 10;
+    protected const float BulletDamage = 1.0f;
 
     // Start is called before the first frame update
     protected virtual void Start()
@@ -23,5 +24,16 @@ public abstract class AbstractPlayerBullet : MonoBehaviour
     private void FixedUpdate()
     {
 
+    }
+
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Target hit, destroy self. This will be overridden for piercing projectiles
+        Destroy(gameObject);
+    }
+
+    public virtual float GetDamage()
+    {
+        return BulletDamage;
     }
 }
