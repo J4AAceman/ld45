@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8489844513522788717}
   - component: {fileID: 1358699160}
-  - component: {fileID: 1358699159}
   - component: {fileID: 1215672090547150374}
+  - component: {fileID: 901326435927722836}
   m_Layer: 8
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -55,21 +55,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &1358699159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489844513522788707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a70c158a7f45fb14dae6feacf8f7dd7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxPlayerSpeed: 12
-  PlayerShip: {fileID: 8489844513522788707}
-  PlayerWeaponList: []
 --- !u!60 &1215672090547150374
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -107,6 +92,20 @@ PolygonCollider2D:
       - {x: 0.1, y: -0.14}
       - {x: 0.4, y: -0.28}
       - {x: 0.4, y: -0.14}
+--- !u!114 &901326435927722836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8489844513522788707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00f7b12d1686a64897082ddb986ea49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxPlayerSpeed: 12
+  PlayerWeaponList: []
 --- !u!1 &8489844513605784882
 GameObject:
   m_ObjectHideFlags: 0

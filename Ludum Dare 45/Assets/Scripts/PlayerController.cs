@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float MaxPlayerSpeed = 1f;
-    public GameObject PlayerShip;
-    public List<AbstractPlayerWeapon> PlayerWeaponList;
-
-    private Transform playerShipTransform;
-    //private Vector2 velocity;
-    private Rigidbody2D playerShipRigidBody;
+    public PlayerShip playerShip;
 
     private void Awake()
     {
@@ -20,24 +14,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(PlayerShip)
-        {
-            playerShipTransform = PlayerShip.transform;
-            playerShipRigidBody = PlayerShip.GetComponent<Rigidbody2D>();
-        }
-        else
-        {
-            Debug.LogError("Missing PlayerShip");
-        }
 
-        if (!playerShipTransform)
-        {
-            Debug.LogError("Missing PlayerShip Transform");
-        }
-        if(!playerShipRigidBody)
-        {
-            Debug.LogError("Missing PlayerShip Rigidbody2D");
-        }
     }
 
     // Update is called once per frame
@@ -53,9 +30,10 @@ public class PlayerController : MonoBehaviour
             velocity.Normalize();
         }
 
-        playerShipRigidBody.velocity = velocity * MaxPlayerSpeed;
+        //playerShipRigidBody.velocity = velocity * MaxPlayerSpeed;
+        playerShip.VelocityVector = velocity;
 
-        foreach(var w in PlayerWeaponList)
+        foreach (var w in playerShip.ShipWeaponList)
         {
             w.ShouldFire = shouldFire;
         }
