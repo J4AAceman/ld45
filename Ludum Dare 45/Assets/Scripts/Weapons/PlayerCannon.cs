@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCannon : AbstractPlayerWeapon
+public class PlayerCannon : AbstractWeapon
 {
-    public AbstractPlayerBullet playerBullet;
+    public AbstractBullet Bullet;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class PlayerCannon : AbstractPlayerWeapon
     
     protected override void Fire()
     {
-        var bullet = Instantiate(playerBullet, this.transform.position, this.transform.rotation);
+        var bullet = Instantiate(Bullet, this.transform.position, this.transform.rotation);
     }
 
 }

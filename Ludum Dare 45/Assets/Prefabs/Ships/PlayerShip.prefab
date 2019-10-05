@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8489844513522788717}
   - component: {fileID: 1358699160}
   - component: {fileID: 1215672090547150374}
-  - component: {fileID: 901326435927722836}
+  - component: {fileID: 6610349487454268968}
   m_Layer: 8
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -92,7 +92,7 @@ PolygonCollider2D:
       - {x: 0.1, y: -0.14}
       - {x: 0.4, y: -0.28}
       - {x: 0.4, y: -0.14}
---- !u!114 &901326435927722836
+--- !u!114 &6610349487454268968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,11 +101,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8489844513522788707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f00f7b12d1686a64897082ddb986ea49, type: 3}
+  m_Script: {fileID: 11500000, guid: 23b0e27be8e7f6c42974b7f2b112e4e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxPlayerSpeed: 12
-  PlayerWeaponList: []
+  MaxShipSpeed: 12
+  ShipWeaponList:
+  - {fileID: 0}
+  MaxHealth: 100
+  CurrentHealth: 0
 --- !u!1 &8489844513605784882
 GameObject:
   m_ObjectHideFlags: 0

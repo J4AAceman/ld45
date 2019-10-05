@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public PlayerShip playerShip;
+    public AbstractShipDescriptor playerShip;
 
     private void Awake()
     {

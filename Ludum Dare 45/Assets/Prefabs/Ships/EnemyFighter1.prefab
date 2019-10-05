@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 4688938836055780546}
   - component: {fileID: 6628999612833544719}
   - component: {fileID: 8200449235126288038}
+  - component: {fileID: 7488869432035433454}
   m_Layer: 10
   m_Name: EnemyFighter1
   m_TagString: Untagged
@@ -173,3 +174,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb43c225149bdb048a66e1c1843ae011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartingVelocity: {x: 0, y: -0.25}
+--- !u!114 &7488869432035433454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7911093349019189718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b0e27be8e7f6c42974b7f2b112e4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxShipSpeed: 8
+  ShipWeaponList: []
+  MaxHealth: 3
+  CurrentHealth: 0

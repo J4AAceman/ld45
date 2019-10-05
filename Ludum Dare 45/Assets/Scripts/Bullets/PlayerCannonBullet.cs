@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCannonBullet : AbstractPlayerBullet
+public class PlayerCannonBullet : AbstractBullet
 {
     // Start is called before the first frame update
     protected override void Start()

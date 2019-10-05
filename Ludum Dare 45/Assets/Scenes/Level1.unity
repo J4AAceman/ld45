@@ -120,28 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &287022698 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7911093349019189718, guid: c97fcd9337994b547b738b828654537a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2096048888}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &287022699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287022698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23b0e27be8e7f6c42974b7f2b112e4e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxShipSpeed: 8
-  ShipWeaponList: []
-  MaxHealth: 3
-  CurrentHealth: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2282,8 +2260,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6253065035690692870, guid: 835690000cd03a749b5ab5f5177296ca,
+        type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 4348517253025039780, guid: 613adb03c26fbe54f9a6c38a2576f976,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835690000cd03a749b5ab5f5177296ca, type: 3}
+--- !u!114 &1358699159 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6610349487454268968, guid: 018498ad7ef43ca48bda36b13a7119e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8489844514317349877}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b0e27be8e7f6c42974b7f2b112e4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1358699161 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8489844513522788717, guid: 018498ad7ef43ca48bda36b13a7119e0,
@@ -2356,11 +2352,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200449235126288038, guid: c97fcd9337994b547b738b828654537a,
-        type: 3}
-      propertyPath: StartingVelocity.y
-      value: -0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c97fcd9337994b547b738b828654537a, type: 3}
@@ -2435,7 +2426,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerShip
       value: 
-      objectReference: {fileID: 8489844514317349878}
+      objectReference: {fileID: 1358699159}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2acfe8d56aa7854589546f1aab07551, type: 3}
 --- !u!1001 &5665441160282540575
@@ -2583,22 +2574,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 901326435927722836, guid: 018498ad7ef43ca48bda36b13a7119e0,
-        type: 3}
-      propertyPath: PlayerWeaponList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 901326435927722836, guid: 018498ad7ef43ca48bda36b13a7119e0,
-        type: 3}
-      propertyPath: ShipWeaponList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 901326435927722836, guid: 018498ad7ef43ca48bda36b13a7119e0,
-        type: 3}
-      propertyPath: PlayerWeaponList.Array.data[0]
-      value: 
-      objectReference: {fileID: 935048022}
-    - target: {fileID: 901326435927722836, guid: 018498ad7ef43ca48bda36b13a7119e0,
+    - target: {fileID: 6610349487454268968, guid: 018498ad7ef43ca48bda36b13a7119e0,
         type: 3}
       propertyPath: ShipWeaponList.Array.data[0]
       value: 
@@ -2607,6 +2583,22 @@ PrefabInstance:
       propertyPath: PlayerWeaponList.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: ShipWeaponList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: PlayerWeaponList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: PlayerWeaponList.Array.data[0]
+      value: 
+      objectReference: {fileID: 935048022}
+    - target: {fileID: 0}
+      propertyPath: ShipWeaponList.Array.data[0]
+      value: 
+      objectReference: {fileID: 935048022}
     - target: {fileID: 0}
       propertyPath: PlayerWeaponList.Array.data[0]
       value: 
@@ -2687,15 +2679,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 018498ad7ef43ca48bda36b13a7119e0, type: 3}
---- !u!114 &8489844514317349878 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 901326435927722836, guid: 018498ad7ef43ca48bda36b13a7119e0,
-    type: 3}
-  m_PrefabInstance: {fileID: 8489844514317349877}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f00f7b12d1686a64897082ddb986ea49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AbstractPlayerBullet : MonoBehaviour
+public class AbstractBullet : MonoBehaviour
 {
     protected const float BulletLifetime = 2.0f;
     protected Vector2 StartingVelocity = Vector2.up * 10;
@@ -18,7 +18,7 @@ public abstract class AbstractPlayerBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void FixedUpdate()
