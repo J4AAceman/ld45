@@ -17,7 +17,7 @@ public abstract class AbstractShipDescriptor : MonoBehaviour
 
     public Vector2 VelocityVector { get => velocityVector; set => velocityVector = (value.magnitude > 1 ? value.normalized : value) * MaxShipSpeed; }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         ShipRigidBody = GetComponent<Rigidbody2D>();
         InitializeShipStats();

@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxShipSpeed: 8
   ShipWeaponList: []
-  MaxHealth: 3
+  MaxHealth: 10
   CurrentHealth: 0
   IsInvincible: 0
 --- !u!114 &6691608974493451059

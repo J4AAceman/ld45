@@ -98,7 +98,7 @@ MonoBehaviour:
   MaxShipSpeed: 8
   ShipWeaponList:
   - {fileID: 6460620984301043754}
-  MaxHealth: 3
+  MaxHealth: 4
   CurrentHealth: 0
   IsInvincible: 0
 --- !u!114 &1422714799969779094
