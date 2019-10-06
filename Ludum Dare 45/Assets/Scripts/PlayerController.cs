@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
+
         if(!HackFX || !HackFX.GetComponent<LineRenderer>())
         {
             Debug.LogError("Must have a HackFX, with a LineRenderer attached");
