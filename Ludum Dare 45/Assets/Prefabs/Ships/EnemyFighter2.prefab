@@ -115,8 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingVelocity: {x: 0, y: -0.5}
   FinalVelocity: {x: 0.5, y: 0}
-  InterpolationTime: 2
-  TurnDelay: 1
+  MaxInterpolationTime: 2
+  TurnDelay: 0
 --- !u!1 &9065044000474212289
 GameObject:
   m_ObjectHideFlags: 0

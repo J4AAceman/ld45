@@ -47,7 +47,10 @@ public class LevelController : MonoBehaviour
                 // Set layer for all weapons' bullets
                 foreach(var weapon in go.GetComponent<AbstractShipDescriptor>().ShipWeaponList)
                 {
-                    weapon.BulletLayer = LayerMask.NameToLayer("EnemyBullets");
+                    if (weapon)
+                    {
+                        weapon.BulletLayer = LayerMask.NameToLayer("EnemyBullets");
+                    }
                 }
             }
             else

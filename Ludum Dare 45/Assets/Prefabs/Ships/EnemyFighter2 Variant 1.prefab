@@ -82,5 +82,10 @@ PrefabInstance:
       propertyPath: FinalVelocity.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1422714799969779094, guid: dff6f84c4e72f4e47997f2dc49c244e1,
+        type: 3}
+      propertyPath: TurnDelay
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dff6f84c4e72f4e47997f2dc49c244e1, type: 3}

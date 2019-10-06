@@ -19,14 +19,17 @@ public abstract class AbstractEnemyBehavior : MonoBehaviour
     protected virtual void FixedUpdate()
     {
         // If the ship has left the playable area (or somehow passed it), kill it
-        if (transform.position.y < KillLineNY)
+        if (transform.position.y < KillLineNY || transform.position.y > KillLinePY || transform.position.x < KillLineNX || transform.position.x > KillLinePX)
         {
             Destroy(gameObject);
         }
 
         foreach (var w in shipWeaponList)
         {
-            w.ShouldFire = true;
+            if (w)
+            {
+                w.ShouldFire = true;
+            }
         }
     }
 
