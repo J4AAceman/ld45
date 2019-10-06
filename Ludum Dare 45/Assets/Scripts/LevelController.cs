@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class LevelController : MonoBehaviour
@@ -10,6 +11,8 @@ public class LevelController : MonoBehaviour
     public float LevelEndTime = 0;
 
     public float ScrollRate = 1.0f;
+
+    public GameObject Tilemap;
 
     private int index = 0;
 
@@ -59,9 +62,14 @@ public class LevelController : MonoBehaviour
             }
         }
 
+        if(Tilemap)
+        {
+            Tilemap.transform.position += Vector3.down * ScrollRate * Time.deltaTime;
+        }
+
         if(LevelEndTime < Time.timeSinceLevelLoad)
         {
-            // TODO: end level
+            SceneManager.LoadScene("GameEndScreen", LoadSceneMode.Single);
         }
     }
 

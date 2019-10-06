@@ -1,55 +1,43 @@
 fileFormatVersion: 2
-guid: 0886b1c1b1ee8944da7b7d83e47ec8f8
+guid: ed5a77dea06ed404e823bb98ef8a0251
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5437382086303104675
-    second: DesertTiles1_0
+      213: 1921749116280191059
+    second: Facility_0
   - first:
-      213: -2603174252139734416
-    second: DesertTiles1_1
+      213: 8368558294003113493
+    second: Facility_1
   - first:
-      213: 3382725309149266462
-    second: DesertTiles1_2
+      213: 3639823511156892039
+    second: Facility_2
   - first:
-      213: 3348180582227321569
-    second: DesertTiles1_3
+      213: -3731029093514233829
+    second: Facility_3
   - first:
-      213: 5741564298501516527
-    second: DesertTiles1_4
+      213: 2427392777057225597
+    second: Facility_4
   - first:
-      213: 6770993780506955061
-    second: DesertTiles1_5
+      213: -823109994362343790
+    second: Facility_5
   - first:
-      213: -3447452373253136470
-    second: DesertTiles1_6
+      213: -5641650934995859865
+    second: Facility_6
   - first:
-      213: 1336427596020426789
-    second: DesertTiles1_7
+      213: 8444805732477389056
+    second: Facility_7
   - first:
-      213: 9066692229036780990
-    second: DesertTiles1_8
+      213: -8277350349041298334
+    second: Facility_8
   - first:
-      213: 398104551925715969
-    second: DesertTiles1_9
+      213: -2880247121744274330
+    second: Facility_9
   - first:
-      213: -1611074107122817027
-    second: DesertTiles1_10
+      213: 2333478112489496914
+    second: Facility_10
   - first:
-      213: -6655402072073368900
-    second: DesertTiles1_11
-  - first:
-      213: 85209391136134855
-    second: DesertTiles1_12
-  - first:
-      213: 6184374236928116077
-    second: DesertTiles1_13
-  - first:
-      213: 1240777325883972791
-    second: DesertTiles1_14
-  - first:
-      213: 2937296059244187720
-    second: DesertTiles1_15
+      213: -2316837497363124817
+    second: Facility_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -82,15 +70,15 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -146,7 +134,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DesertTiles1_0
+      name: Facility_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddaf7e5f5a36d74a9ea88015c394abd
+      internalID: 1921749116280191059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848fcb61aa5fdf64c9fb616f997b6c37
+      internalID: 8368558294003113493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d7dcf75963c2e4bb3394c82610a8f4
+      internalID: 3639823511156892039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed80b84b2ca50ac42949af687c228170
+      internalID: -3731029093514233829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1964b380ab61bc84baea8b8e6ee3ee53
+      internalID: 2427392777057225597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a636a822be3131348a246007d9a645ba
+      internalID: -823109994362343790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Facility_6
       rect:
         serializedVersion: 2
         x: 0
@@ -160,14 +274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8d92abcec5df8d419bf5dce41381847
-      internalID: 5437382086303104675
+      spriteID: da43619bf07eae649b8349eea05ae038
+      internalID: -5641650934995859865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DesertTiles1_1
+      name: Facility_7
       rect:
         serializedVersion: 2
         x: 32
@@ -181,14 +295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46366e06077536f4dbc64d6a181bcd56
-      internalID: -2603174252139734416
+      spriteID: 021956c23d21feb49beb63285228cbb9
+      internalID: 8444805732477389056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DesertTiles1_2
+      name: Facility_8
       rect:
         serializedVersion: 2
         x: 64
@@ -202,119 +316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d3ee99a59af7104fbb2fa2b743fb862
-      internalID: 3382725309149266462
+      spriteID: f0c82b1d8bed8bc45b9a0a6936b0a491
+      internalID: -8277350349041298334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DesertTiles1_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5001fa4971726b4cb979705e2444ae5
-      internalID: 3348180582227321569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93c0496dd5ff6194881a5b1a73d78d9f
-      internalID: 5741564298501516527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79eeda64bf3240845b82e875893979f3
-      internalID: 6770993780506955061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 605182febf467b644adf1de03c6a8d01
-      internalID: -3447452373253136470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0d50ff5a8dd0f04581817d4f409214f
-      internalID: 1336427596020426789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_8
+      name: Facility_9
       rect:
         serializedVersion: 2
         x: 0
@@ -328,14 +337,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d833625da150ea54ab654f1f18f99ca6
-      internalID: 9066692229036780990
+      spriteID: 2d01ae2badaf4784897d438ff292853d
+      internalID: -2880247121744274330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DesertTiles1_9
+      name: Facility_10
       rect:
         serializedVersion: 2
         x: 32
@@ -349,14 +358,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e10ee9035a1360f4a9118af718cc7382
-      internalID: 398104551925715969
+      spriteID: 1993078b3ec6fb346920165c2bfc8947
+      internalID: 2333478112489496914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DesertTiles1_10
+      name: Facility_11
       rect:
         serializedVersion: 2
         x: 64
@@ -370,113 +379,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb9e85fad4e2dbb4189a4375c31ad1b8
-      internalID: -1611074107122817027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee396e5121c177b4a800bbb1a4ae9a1e
-      internalID: -6655402072073368900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_12
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6d4ace400dcfd448aa494b7ffa558f0
-      internalID: 85209391136134855
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_13
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: beefe6fcd0a52394f949e1fc65ea5070
-      internalID: 6184374236928116077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_14
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58af982b46dc13049bfc7b546d7ad041
-      internalID: 1240777325883972791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DesertTiles1_15
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18fb63d02e4e81d4895cb72b541deb3b
-      internalID: 2937296059244187720
+      spriteID: b68570f7ce2df0245a19b15ff038f207
+      internalID: -2316837497363124817
       vertices: []
       indices: 
       edges: []
