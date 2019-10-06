@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+/Ludum Dare 45/GreatAIEscape.zip
+/Ludum Dare 45/Linux Build
