@@ -97,6 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxShipSpeed: 8
   ShipWeaponList: []
+  Explosion: {fileID: 5418041693498032203, guid: 3bb49a300d2920943b3fde96266f36bd,
+    type: 3}
   MaxHealth: 10
   CurrentHealth: 0
   IsInvincible: 0

@@ -392,7 +392,8 @@ PrefabInstance:
       propertyPath: playerShip
       value: 
       objectReference: {fileID: 460853576}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8819721515681798989, guid: d2acfe8d56aa7854589546f1aab07551, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d2acfe8d56aa7854589546f1aab07551, type: 3}
 --- !u!1 &1712136928
 GameObject:
@@ -545,7 +546,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -59922463
-  m_SortingLayer: -5
+  m_SortingLayer: -6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

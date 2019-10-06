@@ -128,6 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 5
   CurrentHealth: 0
+  Explosion: {fileID: 5418041693498032203, guid: 3bb49a300d2920943b3fde96266f36bd,
+    type: 3}
 --- !u!58 &7006020818011406397
 CircleCollider2D:
   m_ObjectHideFlags: 0

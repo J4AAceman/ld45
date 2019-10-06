@@ -7,6 +7,7 @@ public abstract class AbstractShipDescriptor : MonoBehaviour
     private Vector2 velocityVector;
     public float MaxShipSpeed = 12.0f;
     public List<AbstractWeapon> ShipWeaponList;
+    public GameObject Explosion;
 
     public float MaxHealth = 100.0f;
     public float CurrentHealth;
@@ -30,6 +31,10 @@ public abstract class AbstractShipDescriptor : MonoBehaviour
         if (CurrentHealth <= 0)
         {
             // TODO: Handle death better
+            if(Explosion)
+            {
+                Instantiate(Explosion, transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
     }

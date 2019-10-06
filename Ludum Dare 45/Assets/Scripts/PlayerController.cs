@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public float MaxHackCooldown = 5.0f;
 
     private float currentHackCooldown;
-    private const float MaxControlDisableTime = 1.0f;
+    private const float MaxControlDisableTime = 1.0f; // Actually just controls rotation right now?
     private float FireDisabledTime = 0.0f;
 
     private const float MaxInvincibilityTime = 2.0f;
@@ -60,6 +61,10 @@ public class PlayerController : MonoBehaviour
 
     private void DoControls()
     {
+        if(Input.GetAxis("Cancel") > 0)
+        {
+            Application.Quit();
+        }
 
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -128,6 +133,9 @@ public class PlayerController : MonoBehaviour
                         // Reset health of new ship
                         playerShip.InitializeShipStats();
 
+                        // TODO: a much better method of making Player ship's much more durable (maybe dependent on difficulty?)
+                        playerShip.CurrentHealth = playerShip.MaxHealth * 5;
+
                         // Preserve ship through level-load
                         DontDestroyOnLoad(playerShip.gameObject);
 
@@ -139,7 +147,8 @@ public class PlayerController : MonoBehaviour
 
                         // Now destroy the old ship
                         // TODO: make destruction animation for all ships
-                        Destroy(oldPlayerShip.gameObject);
+                        //Destroy(oldPlayerShip.gameObject);
+                        oldPlayerShip.CurrentHealth = -1;
                     }
 
                     List<Vector3> boltPositions = new List<Vector3> { playerShip.transform.position, ray.point };
@@ -159,6 +168,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        if(!playerShip)
+        {
+            SceneManager.LoadScene("GameEndScreen");
+        }
     }
 }

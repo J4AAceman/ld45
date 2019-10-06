@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2586269213033183403
+--- !u!1 &275496083579596875
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8576508682123351718}
-  - component: {fileID: 4814547621861087004}
-  - component: {fileID: 8819721515681798989}
+  - component: {fileID: 1421251410405438718}
+  - component: {fileID: 4065607391817042063}
   m_Layer: 0
-  m_Name: PlayerControllerObject
+  m_Name: BasicCannonSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8576508682123351718
+--- !u!4 &1421251410405438718
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2586269213033183403}
+  m_GameObject: {fileID: 275496083579596875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,32 +31,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4814547621861087004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2586269213033183403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a70c158a7f45fb14dae6feacf8f7dd7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerShip: {fileID: 0}
-  HackFX: {fileID: 355633055957319793, guid: d5feaf6fc4549fb4aa5ec0d06bc35d7f, type: 3}
-  MaxHackCooldown: 5
---- !u!82 &8819721515681798989
+--- !u!82 &4065607391817042063
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2586269213033183403}
+  m_GameObject: {fileID: 275496083579596875}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3bdfff9cf1ee09f45ab22071ab3aeabb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8942b1da883e64d44b881263d07555f1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

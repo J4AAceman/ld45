@@ -7,6 +7,8 @@ public class DoorLockDescriptor : MonoBehaviour
     public float MaxHealth = 5.0f;
     public float CurrentHealth;
 
+    public GameObject Explosion;
+
     private void Awake()
     {
         CurrentHealth = MaxHealth;
@@ -17,6 +19,10 @@ public class DoorLockDescriptor : MonoBehaviour
         if (CurrentHealth <= 0)
         {
             // TODO: Handle death better
+            if(Explosion)
+            {
+                Instantiate(Explosion, transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
     }
