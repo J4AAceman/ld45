@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class AbstractWeapon : MonoBehaviour
 {
     public bool ShouldFire = false;
+    public int BulletLayer = 0;
 
     protected const float CooldownTime = 0.2f;
 

@@ -45,13 +45,314 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnList:
   - SpawnTime: 0
-    SpawnPosition: {x: 0, y: 0}
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 6714672082923412210, guid: 1325629f730e0bc4396b99949ce3bf21,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 3
+    SpawnPosition: {x: 0.02, y: 0, z: 0}
+    ShipPrefab: {fileID: 6714672082923412210, guid: 1325629f730e0bc4396b99949ce3bf21,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 4.5
+    SpawnPosition: {x: 2, y: 0, z: 0}
+    ShipPrefab: {fileID: 6714672082923412210, guid: 1325629f730e0bc4396b99949ce3bf21,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 6
+    SpawnPosition: {x: -2, y: 0, z: 0}
+    ShipPrefab: {fileID: 6714672082923412210, guid: 1325629f730e0bc4396b99949ce3bf21,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 8
+    SpawnPosition: {x: -8, y: 1, z: 0}
     ShipPrefab: {fileID: 7911093349019189718, guid: c97fcd9337994b547b738b828654537a,
       type: 3}
-    BehaviorScript: {fileID: 0}
-  - SpawnTime: 0
-    SpawnPosition: {x: 2, y: 0}
+    DrawGizmo: 1
+  - SpawnTime: 8
+    SpawnPosition: {x: -6.875, y: 0, z: 0}
     ShipPrefab: {fileID: 7911093349019189718, guid: c97fcd9337994b547b738b828654537a,
       type: 3}
-    BehaviorScript: {fileID: 0}
-  LevelEndTime: 0
+    DrawGizmo: 1
+  - SpawnTime: 8
+    SpawnPosition: {x: -5.75, y: 1, z: 0}
+    ShipPrefab: {fileID: 7911093349019189718, guid: c97fcd9337994b547b738b828654537a,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 11
+    SpawnPosition: {x: 8, y: 1, z: 0}
+    ShipPrefab: {fileID: 7911093349019189718, guid: c97fcd9337994b547b738b828654537a,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 11
+    SpawnPosition: {x: 5.75, y: 1, z: 0}
+    ShipPrefab: {fileID: 7911093349019189718, guid: c97fcd9337994b547b738b828654537a,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 11
+    SpawnPosition: {x: 6.875, y: 0, z: 0}
+    ShipPrefab: {fileID: 7911093349019189718, guid: c97fcd9337994b547b738b828654537a,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 13
+    SpawnPosition: {x: -8, y: 0, z: 0}
+    ShipPrefab: {fileID: 978869438584020238, guid: b7e0309ffc873824c927192fc5b54a2d,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 14
+    SpawnPosition: {x: -7, y: 0, z: 0}
+    ShipPrefab: {fileID: 978869438584020238, guid: b7e0309ffc873824c927192fc5b54a2d,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 15
+    SpawnPosition: {x: -6, y: 0, z: 0}
+    ShipPrefab: {fileID: 978869438584020238, guid: b7e0309ffc873824c927192fc5b54a2d,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 16
+    SpawnPosition: {x: -5, y: 0, z: 0}
+    ShipPrefab: {fileID: 978869438584020238, guid: b7e0309ffc873824c927192fc5b54a2d,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 17
+    SpawnPosition: {x: -4, y: 0, z: 0}
+    ShipPrefab: {fileID: 978869438584020238, guid: b7e0309ffc873824c927192fc5b54a2d,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 19
+    SpawnPosition: {x: 8, y: 1, z: 0}
+    ShipPrefab: {fileID: 614932835407055580, guid: b3ab41fbfa4b0f34788d7009332f610f,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 20
+    SpawnPosition: {x: 7, y: 1, z: 0}
+    ShipPrefab: {fileID: 614932835407055580, guid: b3ab41fbfa4b0f34788d7009332f610f,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 21
+    SpawnPosition: {x: 6, y: 1, z: 0}
+    ShipPrefab: {fileID: 614932835407055580, guid: b3ab41fbfa4b0f34788d7009332f610f,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 22
+    SpawnPosition: {x: 5, y: 1, z: 0}
+    ShipPrefab: {fileID: 614932835407055580, guid: b3ab41fbfa4b0f34788d7009332f610f,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 23
+    SpawnPosition: {x: 6, y: 1, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 23
+    SpawnPosition: {x: 4, y: 1, z: 0}
+    ShipPrefab: {fileID: 614932835407055580, guid: b3ab41fbfa4b0f34788d7009332f610f,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 27
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 1035476485331800781, guid: f219b2f251f0ea440a74e570210f9a1c,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 28
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 1035476485331800781, guid: f219b2f251f0ea440a74e570210f9a1c,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 29
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 1035476485331800781, guid: f219b2f251f0ea440a74e570210f9a1c,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 30
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 1035476485331800781, guid: f219b2f251f0ea440a74e570210f9a1c,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 31
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 1035476485331800781, guid: f219b2f251f0ea440a74e570210f9a1c,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 40
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 1586829659957220528, guid: dff6f84c4e72f4e47997f2dc49c244e1,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 41.5
+    SpawnPosition: {x: 0.5, y: 0, z: 0}
+    ShipPrefab: {fileID: 1586829659957220528, guid: dff6f84c4e72f4e47997f2dc49c244e1,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 43
+    SpawnPosition: {x: 1, y: 0, z: 0}
+    ShipPrefab: {fileID: 1586829659957220528, guid: dff6f84c4e72f4e47997f2dc49c244e1,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 44.5
+    SpawnPosition: {x: 1.5, y: 0, z: 0}
+    ShipPrefab: {fileID: 1586829659957220528, guid: dff6f84c4e72f4e47997f2dc49c244e1,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 46
+    SpawnPosition: {x: 2, y: 0, z: 0}
+    ShipPrefab: {fileID: 1586829659957220528, guid: dff6f84c4e72f4e47997f2dc49c244e1,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 47
+    SpawnPosition: {x: 6, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 48
+    SpawnPosition: {x: -6, y: 0, z: 0}
+    ShipPrefab: {fileID: 6714672082923412210, guid: 1325629f730e0bc4396b99949ce3bf21,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 49
+    SpawnPosition: {x: -6, y: 0, z: 0}
+    ShipPrefab: {fileID: 6714672082923412210, guid: 1325629f730e0bc4396b99949ce3bf21,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 50
+    SpawnPosition: {x: -6, y: 0, z: 0}
+    ShipPrefab: {fileID: 6714672082923412210, guid: 1325629f730e0bc4396b99949ce3bf21,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 50
+    SpawnPosition: {x: 6, y: 0, z: 0}
+    ShipPrefab: {fileID: 1682748162107303015, guid: f96b4f57b2032c444a9e18e788e3fcfa,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 51
+    SpawnPosition: {x: -6, y: 0, z: 0}
+    ShipPrefab: {fileID: 6714672082923412210, guid: 1325629f730e0bc4396b99949ce3bf21,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 51.5
+    SpawnPosition: {x: 5.5, y: 0, z: 0}
+    ShipPrefab: {fileID: 1682748162107303015, guid: f96b4f57b2032c444a9e18e788e3fcfa,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 52
+    SpawnPosition: {x: -6, y: 0, z: 0}
+    ShipPrefab: {fileID: 6714672082923412210, guid: 1325629f730e0bc4396b99949ce3bf21,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 53
+    SpawnPosition: {x: 5, y: 0, z: 0}
+    ShipPrefab: {fileID: 1682748162107303015, guid: f96b4f57b2032c444a9e18e788e3fcfa,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 54.5
+    SpawnPosition: {x: 4.5, y: 0, z: 0}
+    ShipPrefab: {fileID: 1682748162107303015, guid: f96b4f57b2032c444a9e18e788e3fcfa,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 56
+    SpawnPosition: {x: 4, y: 0, z: 0}
+    ShipPrefab: {fileID: 1682748162107303015, guid: f96b4f57b2032c444a9e18e788e3fcfa,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 59
+    SpawnPosition: {x: 5, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 59.5
+    SpawnPosition: {x: 5, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 60
+    SpawnPosition: {x: 5, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 60.5
+    SpawnPosition: {x: 5, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 61
+    SpawnPosition: {x: 5, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 62
+    SpawnPosition: {x: -7, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 62.5
+    SpawnPosition: {x: -7, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 63
+    SpawnPosition: {x: -7, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 63.5
+    SpawnPosition: {x: -7, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 64
+    SpawnPosition: {x: -7, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 67
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 67.5
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 68
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 68.5
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 69
+    SpawnPosition: {x: 0, y: 0, z: 0}
+    ShipPrefab: {fileID: 4095917354779564996, guid: da01fa8418c3a794b81d4df12e950663,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 66
+    SpawnPosition: {x: -10, y: -2, z: 0}
+    ShipPrefab: {fileID: 8378042414396688032, guid: a2a8dca54865d0842b07aa62b8bbc226,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 67.5
+    SpawnPosition: {x: -10, y: -2, z: 0}
+    ShipPrefab: {fileID: 8378042414396688032, guid: a2a8dca54865d0842b07aa62b8bbc226,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 69
+    SpawnPosition: {x: -10, y: -2, z: 0}
+    ShipPrefab: {fileID: 8378042414396688032, guid: a2a8dca54865d0842b07aa62b8bbc226,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 68.5
+    SpawnPosition: {x: -2, y: 0, z: 0}
+    ShipPrefab: {fileID: 8154533885714258091, guid: a510bd47e80740940a4606a9985f79bc,
+      type: 3}
+    DrawGizmo: 1
+  - SpawnTime: 70
+    SpawnPosition: {x: 2, y: 0, z: 0}
+    ShipPrefab: {fileID: 8154533885714258091, guid: a510bd47e80740940a4606a9985f79bc,
+      type: 3}
+    DrawGizmo: 1
+  LevelEndTime: 100
+  ScrollRate: 2

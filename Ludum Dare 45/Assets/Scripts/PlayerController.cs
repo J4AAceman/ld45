@@ -10,6 +10,14 @@ public class PlayerController : MonoBehaviour
     public float MaxHackCooldown = 5.0f;
 
     private float currentHackCooldown;
+    private const float MaxControlDisableTime = 1.0f;
+    private float FireDisabledTime = 0.0f;
+
+    private const float MaxInvincibilityTime = 2.0f;
+    private float InvincibilityTime = 0.0f;
+
+    private Quaternion from_rot = Quaternion.identity;
+    private Quaternion to_rot = Quaternion.identity;
 
     private void Awake()
     {
@@ -18,6 +26,7 @@ public class PlayerController : MonoBehaviour
             Debug.LogError("Must have a HackFX, with a LineRenderer attached");
         }
         currentHackCooldown = 0;
+        to_rot = playerShip.transform.rotation;
     }
 
     // Start is called before the first frame update
@@ -29,9 +38,30 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (FireDisabledTime > 0)
+        {
+            // Update timers
+            FireDisabledTime = Mathf.Max(0, FireDisabledTime - Time.deltaTime);
+
+            // Slerp to new rotation
+            playerShip.transform.rotation = Quaternion.Slerp( to_rot, from_rot, FireDisabledTime / MaxControlDisableTime);
+        }
+
+        DoControls();
+
+        InvincibilityTime = Mathf.Max(0, InvincibilityTime - Time.deltaTime);
+        if (InvincibilityTime == 0)
+        {
+            playerShip.IsInvincible = false;
+        }
+    }
+
+    private void DoControls()
+    {
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        bool shouldFire = Input.GetAxis("Fire Weapons") > 0.0f;
+        bool shouldFire = Input.GetAxis("Fire Weapons") > 0.0f && FireDisabledTime == 0.0f;
         bool stealShip = Input.GetAxis("Hack") > 0.0f;
         Vector2 velocity = new Vector2(horizontal, vertical);
 
@@ -64,6 +94,13 @@ public class PlayerController : MonoBehaviour
                 {
                     // Steal ship
 
+                    // Make new ship temporarily invincible
+                    newShip.IsInvincible = true;
+                    InvincibilityTime = MaxInvincibilityTime;
+
+                    // Disable controls
+                    FireDisabledTime = MaxControlDisableTime;
+
                     // Delete enemy behavior, but NOT THE OBJECT
                     Destroy(otherObject.GetComponent<AbstractEnemyBehavior>());
 
@@ -71,11 +108,23 @@ public class PlayerController : MonoBehaviour
                     var oldPlayerShip = playerShip;
                     playerShip = newShip;
 
+                    // Switch ship's Rigidbody2D to Dynamic
+                    playerShip.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+
+                    // Grab current rotation to Slerp from
+                    from_rot = playerShip.transform.rotation;
+
                     // Switch layer of new ship
                     playerShip.gameObject.layer = LayerMask.NameToLayer("Player");
 
                     // Reset health of new ship
-                    playerShip.InitializeShipStats(); 
+                    playerShip.InitializeShipStats();
+
+                    // Set layer for all weapons' bullets
+                    foreach (var weapon in playerShip.ShipWeaponList)
+                    {
+                        weapon.BulletLayer = LayerMask.NameToLayer("PlayerBullets");
+                    }
 
                     // Now destroy the old ship
                     // TODO: make destruction animation for all ships

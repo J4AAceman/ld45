@@ -11,6 +11,8 @@ public abstract class AbstractShipDescriptor : MonoBehaviour
     public float MaxHealth = 100.0f;
     public float CurrentHealth;
 
+    public bool IsInvincible = false;
+
     private Rigidbody2D ShipRigidBody;
 
     public Vector2 VelocityVector { get => velocityVector; set => velocityVector = (value.magnitude > 1 ? value.normalized : value) * MaxShipSpeed; }
@@ -37,7 +39,7 @@ public abstract class AbstractShipDescriptor : MonoBehaviour
         GameObject otherObject = collision.gameObject;
         DamageDealer dd = otherObject.GetComponent<DamageDealer>();
 
-        if (dd)
+        if (dd && !IsInvincible)
         {
             CurrentHealth -= dd.GetDamage();
         }

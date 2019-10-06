@@ -10,7 +10,7 @@ public class EnemySpawnElement
     public float SpawnTime = 0.0f;
     public Vector3 SpawnPosition = Vector3.zero;
     public GameObject ShipPrefab;
-    public bool DrawGizmo = false;
+    public bool DrawGizmo = true;
 
     public bool IsValid { get => ShipPrefab && ShipPrefab.GetComponent<AbstractShipDescriptor>() & SpawnTime >= 0.0f; }
 

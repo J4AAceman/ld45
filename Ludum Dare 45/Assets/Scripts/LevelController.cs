@@ -43,7 +43,12 @@ public class LevelController : MonoBehaviour
         {
             if(SpawnList[index].SpawnTime < Time.timeSinceLevelLoad)
             {
-                Instantiate(SpawnList[index].ShipPrefab, transform.position + new Vector3(SpawnList[index].SpawnPosition.x, SpawnList[index].SpawnPosition.y), Quaternion.identity);
+                GameObject go = Instantiate(SpawnList[index].ShipPrefab, transform.position + new Vector3(SpawnList[index].SpawnPosition.x, SpawnList[index].SpawnPosition.y), Quaternion.Euler(0, 0, 180));
+                // Set layer for all weapons' bullets
+                foreach(var weapon in go.GetComponent<AbstractShipDescriptor>().ShipWeaponList)
+                {
+                    weapon.BulletLayer = LayerMask.NameToLayer("EnemyBullets");
+                }
             }
             else
             {
@@ -73,8 +78,9 @@ public class LevelController : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
+        // Draw Gizmos for all spawn elements
         foreach(var se in SpawnList)
         {
             if (se.DrawGizmo)
@@ -94,5 +100,10 @@ public class LevelController : MonoBehaviour
                 Gizmos.DrawLine(position + new Vector3(1, -1, 0), position + new Vector3(-1, 1, 0));
             }
         }
+
+        // Draw level borders, for convenience
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(new Vector3(-9, 5), new Vector3(-9, 5 + ScrollRate * LevelEndTime));
+        Gizmos.DrawLine(new Vector3(9, 5), new Vector3(9, 5 + ScrollRate * LevelEndTime));
     }
 }

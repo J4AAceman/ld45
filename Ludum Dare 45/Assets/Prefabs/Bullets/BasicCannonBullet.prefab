@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8489844513522788707
+--- !u!1 &4586222593012134294
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,58 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8489844513522788717}
-  - component: {fileID: 1358699160}
-  - component: {fileID: 1215672090547150374}
-  - component: {fileID: 6610349487454268968}
-  m_Layer: 8
-  m_Name: PlayerShip
+  - component: {fileID: 7520605981164201242}
+  - component: {fileID: 7338040546695801812}
+  - component: {fileID: 2234883742176356738}
+  - component: {fileID: 2264193540740121813}
+  - component: {fileID: 445333818074329430}
+  m_Layer: 0
+  m_Name: BasicCannonBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8489844513522788717
+--- !u!4 &7520605981164201242
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489844513522788707}
+  m_GameObject: {fileID: 4586222593012134294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8489844513605784893}
+  - {fileID: 5863825809071447266}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1358699160
+--- !u!114 &7338040546695801812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4586222593012134294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7972089cb9322b540bc3bc497cdc6a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &2234883742176356738
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489844513522788707}
+  m_GameObject: {fileID: 4586222593012134294}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -54,14 +67,14 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
---- !u!60 &1215672090547150374
-PolygonCollider2D:
+  m_Constraints: 0
+--- !u!58 &2264193540740121813
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489844513522788707}
+  m_GameObject: {fileID: 4586222593012134294}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -69,46 +82,22 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.1, y: 0.16}
-      - {x: 0.03, y: 0.47}
-      - {x: -0.03, y: 0.47}
-      - {x: -0.1, y: 0.16}
-      - {x: -0.4, y: -0.14}
-      - {x: -0.4, y: -0.28}
-      - {x: -0.1, y: -0.14}
-      - {x: -0.06, y: -0.43}
-      - {x: 0.06, y: -0.43}
-      - {x: 0.1, y: -0.14}
-      - {x: 0.4, y: -0.28}
-      - {x: 0.4, y: -0.14}
---- !u!114 &6610349487454268968
+  serializedVersion: 2
+  m_Radius: 0.125
+--- !u!114 &445333818074329430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489844513522788707}
+  m_GameObject: {fileID: 4586222593012134294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23b0e27be8e7f6c42974b7f2b112e4e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ac00eb3e97fc2744a635b39811a46ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxShipSpeed: 12
-  ShipWeaponList: []
-  MaxHealth: 100
-  CurrentHealth: 0
---- !u!1 &8489844513605784882
+  Damage: 1
+--- !u!1 &5538754489074610966
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,36 +105,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8489844513605784893}
-  - component: {fileID: 8489844513605784892}
-  m_Layer: 8
-  m_Name: PlayerShipRenderer
+  - component: {fileID: 5863825809071447266}
+  - component: {fileID: 8217139329970077821}
+  m_Layer: 0
+  m_Name: BulletRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8489844513605784893
+--- !u!4 &5863825809071447266
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489844513605784882}
+  m_GameObject: {fileID: 5538754489074610966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8489844513522788717}
+  m_Father: {fileID: 7520605981164201242}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8489844513605784892
+--- !u!212 &8217139329970077821
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489844513605784882}
+  m_GameObject: {fileID: 5538754489074610966}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -174,11 +163,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1211659221
-  m_SortingLayer: -1
+  m_SortingLayerID: -1750780419
+  m_SortingLayer: -3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8470065270455496937, guid: c45160ae46ad09b48bc8abeb50a5f607,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9bd20f37c84d84341ac720ff15d3d695, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

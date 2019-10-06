@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCannonBullet : AbstractBullet
+public class BasicCannonBullet : AbstractBullet
 {
     // Start is called before the first frame update
     protected override void Start()
     {
+        StartingDirection = transform.rotation * Vector2.up;
         base.Start();
     }
 

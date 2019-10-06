@@ -44,6 +44,9 @@ TagManager:
   - name: HackFX
     uniqueID: 825200229
     locked: 0
+  - name: Bullets
+    uniqueID: 2544186877
+    locked: 0
   - name: EnemyShips
     uniqueID: 3036805567
     locked: 0
